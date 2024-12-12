@@ -84,9 +84,15 @@ export default function FormAdd() {
               <option value="inactive">inActive</option>
             </select>
           </div>
-          <button className="w-full px-4 py-2 text-white bg-primary rounded hover:opacity-80 focus:outline-none focus:ring focus:ring-blue-300">
-            Add
-          </button>
+          {isUpdate ? (
+            <button className="w-full px-4 py-2 text-white bg-primary rounded hover:opacity-80 focus:outline-none focus:ring focus:ring-blue-300">
+              Update
+            </button>
+          ) : (
+            <button className="w-full px-4 py-2 text-white bg-primary rounded hover:opacity-80 focus:outline-none focus:ring focus:ring-blue-300">
+              Add
+            </button>
+          )}
           {isUpdate ? (
             <button
               onClick={handleCancel}
