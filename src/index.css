@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.Toastify__toast-container {
+  top: 60px !important; /* Thay đổi khoảng cách với đáy */
+}
