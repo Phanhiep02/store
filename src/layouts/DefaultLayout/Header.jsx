@@ -63,7 +63,12 @@ export default function Header() {
             </li>
 
             <li>
-              <RouterLink to={"/crud"} className="hover:text-primary" href="">
+              <RouterLink
+                onClick={() => window.scrollTo(0, 0)}
+                to={"/crud"}
+                className="hover:text-primary"
+                href=""
+              >
                 CRUD
               </RouterLink>
             </li>
