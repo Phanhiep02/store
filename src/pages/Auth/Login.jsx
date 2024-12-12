@@ -15,8 +15,6 @@ export default function Login() {
   const status = useSelector((state) => state.auth.status);
   const error = useSelector((state) => state.auth.error);
 
-  console.log(status);
-
   const onSubmitFormLogin = (e) => {
     e.preventDefault();
     dispatch(getRequestLogin(form));

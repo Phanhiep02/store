@@ -32,8 +32,6 @@ export default function SearchProduct() {
       setSearchParams({ q: keyword });
     }
   }, [dispatch, keyword]);
-  console.log("keyword", keyword);
-  console.log("keywordParams", keywordParams);
 
   return (
     <>

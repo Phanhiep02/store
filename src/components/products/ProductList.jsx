@@ -26,7 +26,6 @@ export default function ProductList() {
 
   useEffect(() => {
     const skip = (currentPage - 1) * 6;
-    console.log("currentPage", currentPage);
 
     dispatch(
       getProducts({

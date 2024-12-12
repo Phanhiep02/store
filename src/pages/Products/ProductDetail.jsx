@@ -14,7 +14,6 @@ export default function ProductDetail() {
   useEffect(() => {
     dispatch(getProduct(productId));
   }, [dispatch]);
-  console.log(product);
 
   const [quantity, setQuantity] = useState(1);
 

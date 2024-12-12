@@ -8,8 +8,6 @@ import "react-toastify/dist/ReactToastify.css";
 export default function AddCart({ id, product }) {
   const products = useSelector((state) => state.products.productsList);
   const dispatch = useDispatch();
-  const cart = useSelector((state) => state.carts.carts);
-  console.log(cart);
 
   const onClickAddCart = () => {
     const productToAdd = product || products.find((prod) => prod.id === id);

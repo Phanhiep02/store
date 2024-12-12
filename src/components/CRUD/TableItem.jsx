@@ -14,8 +14,6 @@ import { toast } from "react-toastify";
 export default function TableItem() {
   const dispatch = useDispatch();
   const users = useSelector(getAllSliceUser);
-  const isUpdate = useSelector((state) => state.users.isUpdate);
-  // console.log(isUpdate);
 
   useEffect(() => {
     dispatch(getUsers());

@@ -22,10 +22,9 @@ export default function FormAdd() {
       dispatch(resetFormUser());
     } else {
       const { id, ...data } = form;
-      console.log(id, data);
 
       dispatch(updateUser({ id, data }));
-      console.log("day la update");
+
       dispatch(setIsUpdate(false));
       dispatch(resetFormUser());
     }

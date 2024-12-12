@@ -17,11 +17,10 @@ export default function Categories() {
   }, [dispatch]);
   const handleCategoryClick = (category) => {
     SetActiveCategories(category);
-    console.log(category);
+
     dispatch(setCategory(category === "All" ? "" : category));
     setSearchParams({});
   };
-  // console.log(categories);
 
   return (
     <>
